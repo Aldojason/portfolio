@@ -16,8 +16,3 @@ Welcome to my personal portfolio website! This project showcases my design and f
 
 - **HTML5** – Page structure and semantic layout
 - **CSS3** – Styling and responsive design (Flexbox, media queries)
-
----
-
-## 📁 Project Structure
-
