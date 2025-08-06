@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! This project showcases my work, skills, education, and ways to contact me. Built using only **HTML and CSS**, the website is fully responsive, interactive, and visually engaging with smooth scroll and background animations.
 
+🔗 **Live Site:** [https://aldojason.github.io/portfolio](https://aldojason.github.io/portfolio)
+
 ## 🚀 Features
 
 - One-page scroll design
