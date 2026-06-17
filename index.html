@@ -2,195 +2,273 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aldo Jason - Portfolio</title>
-  <title>Aldo Jason - Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Aldo Jason - Web developer specializing in HTML, CSS, JavaScript projects.">
-  <meta name="keywords" content="Aldo Jason, web developer, portfolio, HTML, CSS, JavaScript">
-  <meta name="author" content="Aldo Jason">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aldo Jason | Portfolio</title>
 
-  <!-- ✅ Primary SEO -->
-  <meta name="description" content="Official portfolio of Aldo Jason — aspiring front-end developer passionate about UI, UX, and building responsive web experiences.">
-  <meta name="keywords" content="Aldo Jason, Aldo Jason Portfolio, Web Developer, Frontend Developer, JavaScript, HTML, CSS, React, Tamil Nadu Developer">
-  <meta name="author" content="Aldo Jason">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Official portfolio of Aldo Jason — aspiring front-end developer passionate about UI, UX, and building responsive web experiences." />
+  <meta name="keywords" content="Aldo Jason, Aldo Jason Portfolio, Web Developer, Frontend Developer, JavaScript, HTML, CSS, React, Tamil Nadu Developer" />
+  <meta name="author" content="Aldo Jason" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://aldojason.github.io/portfolio/" />
 
-  <!-- ✅ Open Graph (Social Media Preview) -->
-  <meta property="og:title" content="Aldo Jason | Portfolio">
-  <meta property="og:description" content="Explore Aldo Jason's portfolio — front-end developer building modern and interactive web projects.">
-  <meta property="og:url" content="https://aldojason.github.io/portfolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg">
+  <meta property="og:title" content="Aldo Jason | Portfolio" />
+  <meta property="og:description" content="Explore Aldo Jason's portfolio — front-end developer building modern and interactive web projects." />
+  <meta property="og:url" content="https://aldojason.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg" />
 
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Aldo Jason | Portfolio">
-  <meta name="twitter:description" content="Frontend Developer passionate about UI, UX, and building responsive websites.">
-  <meta name="twitter:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aldo Jason | Portfolio" />
+  <meta name="twitter:description" content="Frontend Developer passionate about UI, UX, and building responsive websites." />
+  <meta name="twitter:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg" />
 
-  <!-- ✅ Google Search Console verification -->
-  <!-- ⚠️ After creating your Search Console property, Google will give you a <meta> tag like this:
-       <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
-       Paste that tag below this comment -->
-  
-  <!-- ✅ Styles and Icons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>AJ</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
-  <!-- ✅ Favicon (optional but recommended) -->
-  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">AJ PORTFOLIO</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <span class="loader-text">AJ</span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Aldo<span>Jason</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
   </header>
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="container">
-      <div class="home-content float">
-      <h1 class="name">I'm Aldo Jason</h1>
-      <p class="description">Aspiring Front-End Developer</p>
-      <p class="description">Passionate about clean UI, UX, and accessibility</p>
-      <p class="description">Building interactive and responsive websites</p>
-      </div>
 
-      <div class="resume">
-        <a href="assets/resume.pdf" download class="resume-btn">Download Resume</a>
-      </div>
-
-      <div class="socials">
-        <div class="icon">
-          <a href="https://github.com/Aldojason" target="_blank">
+  <main>
+    <section id="home" class="home">
+      <div class="hero-bg"></div>
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="container hero-container">
+        <p class="hero-badge reveal">Available for opportunities</p>
+        <h1 class="name reveal">
+          Hi, I'm <span class="gradient-text">Aldo Jason</span>
+        </h1>
+        <p class="hero-role reveal">Aspiring Software Developer</p>
+        <p class="description reveal">Passionate about clean UI, UX, and accessibility</p>
+        <p class="description reveal">Building interactive and responsive applications</p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/resume.pdf" download class="btn btn-outline">Download Resume</a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
             <i class="fab fa-github"></i>
             <span>GitHub</span>
           </a>
-        </div>
-        <div class="icon">
-          <a href="https://linkedin.com/in/aldojason" target="_blank">
+          <a href="https://www.linkedin.com/in/aldojason" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About Section -->
-<section id="about" class="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
 
-    <div class="about-content">
-      <p>I’m Aldo Jason, a passionate web developer who enjoys building sleek and interactive interfaces.</p>
-      <p>I focus on clean code, responsive design, and bringing ideas to life through the browser.</p>
-      <p>Currently exploring full-stack development while sharpening my front-end and UI/UX skills.</p>
-    </div>
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-content reveal">
+          <p>Hi, I'm Aldo Jason, a Computer Science Engineering student passionate about software development and problem-solving. I enjoy building web applications and exploring new technologies to create efficient and user-friendly solutions.</p>
+          <p>I have experience working with Python, JavaScript, React, TypeScript, Node.js, HTML, CSS, MongoDB, and MySQL. I have developed projects such as a PDF Automation Tool, Spam Email Detection System, ResumeCraft AI Resume Builder, and various frontend web applications.</p>
+          <p>Currently, I am focused on strengthening my Data Structures &amp; Algorithms, Full-Stack Development, and Software Engineering skills to prepare for Software Development Engineer (SDE) roles. I am always eager to learn, build impactful projects, and collaborate on innovative solutions.</p>
+        </div>
 
-    <h3 class="sub-heading">Education</h3>
-    <p class="education">B.E - Computer Science and Engineering<br>Current CGPA: 8.4 (as of 3rd semester)</p>
+        <div class="about-cards">
+          <div class="glass-card reveal">
+            <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p class="education">B.E — Computer Science and Engineering<br />Current CGPA: 8.2 (as of 5th semester)</p>
+          </div>
+          <div class="glass-card reveal">
+            <h3 class="sub-heading"><i class="fas fa-code"></i> My Skills</h3>
+            <div class="skills-grid">
+              <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
+              <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+              <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+              <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+              <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3 class="sub-heading">My Skills</h3>
-    <div class="skills-grid">
-      <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
-      <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-      <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-      <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
-      <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
-      <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
-      <div class="skill"><i class="fas fa-database"></i><span>MongoDB</span></div>
-      <div class="skill"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-    </div>
-  </div>
-</section>
-<section id="projects">
-  <h2 class="section-title">My Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Book Store</h3>
-      <p>A modern book-selling website with clean UI, category filters, and responsive layout.</p>
-      <a href="https://aldojason.github.io/Store-Book/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>Poster Landing Page</h3>
-      <p>Attractive product landing page for posters using sleek CSS and responsive design.</p>
-      <a href="https://aldojason.github.io/Poster-landing-page/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>Quiz Application</h3>
-      <p>Interactive quiz app using JavaScript with multiple topics and live score tracking.</p>
-      <a href="https://aldojason.github.io/quiz-app/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>To-Do List</h3>
-      <p>Lightweight to-do list with intuitive UI, task tracking, and local storage support.</p>
-      <a href="https://aldojason.github.io/Todolist/" target="_blank">Visit Project</a>
-    </div>
-  </div>
-</section>
-<section id="contact">
-  <h2 class="section-title">Contact Me</h2>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My Projects</h2>
+        <p class="section-subtitle reveal">A selection of work spanning automation, AI, and full-stack development.</p>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-icon">📑</div>
+            <h3>PDF Automation Tool</h3>
+            <p>A web-based application that automates common PDF operations such as merging, splitting, rotating, watermarking, encryption, and metadata extraction.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Flask</span><span>JavaScript</span>
+            </div>
+            <a href="https://pdf-automation-tool-q8sc.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">🧠</div>
+            <h3>NeuroMedict — AI Neurological Detection</h3>
+            <p>An AI-powered healthcare platform designed to assist in the early detection of neurological disorders such as Alzheimer's, Parkinson's, Epilepsy, and Stroke.</p>
+            <div class="tech-tags">
+              <span>AI/ML</span><span>Healthcare</span><span>Web App</span>
+            </div>
+            <a href="https://neuroprediction.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">📄</div>
+            <h3>ResumeCraft — AI Resume Builder</h3>
+            <p>A full-stack AI-powered resume builder that helps users create professional resumes with modern templates.</p>
+            <div class="tech-tags">
+              <span>React</span><span>TypeScript</span><span>Node.js</span>
+            </div>
+            <a href="https://resumecraft-gmoz.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-icon">🤖</div>
+            <h3>Spam Email Detection System</h3>
+            <p>An AI-powered web application that classifies emails as spam or legitimate using Machine Learning techniques.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Flask</span><span>Scikit-learn</span>
+            </div>
+            <a href="https://spam-email-detection-ag9e.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div class="contact-container">
-    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact Me</h2>
+        <p class="section-subtitle reveal">Have a project in mind or want to connect? I'd love to hear from you.</p>
+        <div class="contact-container">
+          <form class="contact-form glass-card reveal" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+          <div class="contact-info glass-card reveal">
+            <p>You can also reach me at:</p>
+            <a href="mailto:aldojason.a@gmail.com" class="email-link">aldojason.a@gmail.com</a>
+            <div class="social-links">
+              <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/aldojason" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="contact-info">
-      <p>You can also reach me at:</p>
-      <a href="mailto:aldojason07@gmail.com" class="email-link">aldojason07@gmail.com</a>
-
-      <div class="social-links">
-        <a href="https://github.com/Aldojason" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/aldojason" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Aldo Jason. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:aldojason.a@gmail.com">aldojason.a@gmail.com</a>
+        <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/aldojason" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
-  </div>
-</section>
-<footer class="site-footer">
-  <p>&copy; 2025 Aldo Jason. All rights reserved.</p>
-  <div class="footer-links">
-    <a href="mailto:aldojason07example.com">aldojason07@gmail.com</a>
-    <a href="https://github.com/Aldojason" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/aldojason" target="_blank">LinkedIn</a>
-  </div>
-</footer>
-<!-- ...existing code... -->
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  </footer>
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  <script>
+    const pageLoader = document.getElementById('page-loader');
+    const navbar = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navOverlay = document.getElementById('nav-overlay');
 
-  // Optional: Close menu when a link is clicked (for better UX)
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
+    window.addEventListener('load', () => {
+      setTimeout(() => pageLoader.classList.add('hidden'), 600);
     });
-  });
-</script>
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    function closeMenu() {
+      navLinks.classList.remove('active');
+      navOverlay.classList.remove('active');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('active');
+      navOverlay.classList.toggle('active', isOpen);
+      menuToggle.classList.toggle('active', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    navOverlay.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealElements.forEach((el) => revealObserver.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
