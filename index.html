@@ -3,194 +3,850 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aldo Jason - Portfolio</title>
-  <title>Aldo Jason - Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Aldo Jason - Web developer specializing in HTML, CSS, JavaScript projects.">
-  <meta name="keywords" content="Aldo Jason, web developer, portfolio, HTML, CSS, JavaScript">
-  <meta name="author" content="Aldo Jason">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aldo Jason | Portfolio</title>
+  <title>Aldo Jason | Software Developer & AI Enthusiast Portfolio</title>
 
   <!-- ✅ Primary SEO -->
-  <meta name="description" content="Official portfolio of Aldo Jason — aspiring front-end developer passionate about UI, UX, and building responsive web experiences.">
-  <meta name="keywords" content="Aldo Jason, Aldo Jason Portfolio, Web Developer, Frontend Developer, JavaScript, HTML, CSS, React, Tamil Nadu Developer">
+  <meta name="description" content="Portfolio of Aldo Jason — Computer Science Engineer specializing in Full-Stack Web Development, AI & Machine Learning, and Mobile App Development.">
+  <meta name="keywords" content="Aldo Jason, Software Developer, Full-Stack Developer, Machine Learning, Python, React, TypeScript, Flutter, Node.js, Portfolio">
   <meta name="author" content="Aldo Jason">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://aldojason.github.io/portfolio/" />
 
   <!-- ✅ Open Graph (Social Media Preview) -->
-  <meta property="og:title" content="Aldo Jason | Portfolio">
-  <meta property="og:description" content="Explore Aldo Jason's portfolio — front-end developer building modern and interactive web projects.">
+  <meta property="og:title" content="Aldo Jason | Portfolio - Software Developer & AI Enthusiast">
+  <meta property="og:description" content="Explore Aldo Jason's finalized projects in AI/ML, Full-Stack, and Mobile development.">
   <meta property="og:url" content="https://aldojason.github.io/portfolio/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg">
+  <meta property="og:image" content="https://aldojason.github.io/portfolio/space.jpg">
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aldo Jason | Portfolio">
-  <meta name="twitter:description" content="Frontend Developer passionate about UI, UX, and building responsive websites.">
-  <meta name="twitter:image" content="https://aldojason.github.io/portfolio/thumbnail.jpg">
+  <meta name="twitter:description" content="Computer Science Engineer passionate about Full-Stack, AI/ML, and Mobile development.">
+  <meta name="twitter:image" content="https://aldojason.github.io/portfolio/space.jpg">
 
-  <!-- ✅ Google Search Console verification -->
-  <!-- ⚠️ After creating your Search Console property, Google will give you a <meta> tag like this:
-       <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
-       Paste that tag below this comment -->
-  
+  <!-- ✅ Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- ✅ Styles and Icons -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   
-  <!-- ✅ Favicon (optional but recommended) -->
-  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
 </head>
-
 <body>
 
+  <!-- 🌌 Fixed Floating Cosmic Space Background -->
+  <div class="space-bg-wrapper" aria-hidden="true">
+    <div class="space-bg-layer" id="spaceBgLayer"></div>
+    <div class="space-overlay-layer"></div>
+    <div class="space-glow-orb orb-1"></div>
+    <div class="space-glow-orb orb-2"></div>
+  </div>
+
   <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">AJ PORTFOLIO</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-accent">&lt;AJ/&gt;</span> ALDO JASON
+    </a>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" role="button" tabindex="0">&#9776;</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <!-- Home Section -->
   <section id="home" class="home">
-    <div class="container">
+    <div class="home-overlay"></div>
+    <div class="container home-container">
+      <div class="hero-badge">
+        <span class="status-dot"></span> Available for Opportunities
+      </div>
       <div class="home-content float">
-      <h1 class="name">I'm Aldo Jason</h1>
-      <p class="description">Aspiring Front-End Developer</p>
-      <p class="description">Passionate about clean UI, UX, and accessibility</p>
-      <p class="description">Building interactive and responsive websites</p>
+        <h1 class="name">Hi, I'm <span class="name-highlight">Aldo Jason</span></h1>
+        <p class="hero-subtitle">Computer Science Engineering Student &amp; Aspiring Software Development Engineer</p>
+        <p class="description">Crafting intelligent full-stack systems, machine learning models, and cross-platform mobile applications that solve real-world problems.</p>
       </div>
 
-      <div class="resume">
-        <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+      <div class="hero-cta-group">
+        <a href="#projects" class="primary-btn">
+          <span>Explore Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="ALDOJASON.resume.pdf" download class="resume-btn">
+          <i class="fas fa-file-download"></i>
+          <span>Download Resume</span>
+        </a>
       </div>
 
       <div class="socials">
         <div class="icon">
-          <a href="https://github.com/Aldojason" target="_blank">
+          <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fab fa-github"></i>
             <span>GitHub</span>
           </a>
         </div>
         <div class="icon">
-          <a href="https://linkedin.com/in/aldojason" target="_blank">
+          <a href="https://linkedin.com/in/aldo-jason" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="mailto:aldojason.a@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
           </a>
         </div>
       </div>
     </div>
   </section>
+
   <!-- About Section -->
-<section id="about" class="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
 
-    <div class="about-content">
-      <p>I’m Aldo Jason, a passionate web developer who enjoys building sleek and interactive interfaces.</p>
-      <p>I focus on clean code, responsive design, and bringing ideas to life through the browser.</p>
-      <p>Currently exploring full-stack development while sharpening my front-end and UI/UX skills.</p>
-    </div>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WHO I AM</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
 
-    <h3 class="sub-heading">Education</h3>
-    <p class="education">B.E - Computer Science and Engineering<br>Current CGPA: 8.4 (as of 3rd semester)</p>
+      <div class="about-card glassmorphism">
+        <div class="about-text">
+          <p>
+            I am a final-year <strong>Computer Science and Engineering</strong> student with hands-on experience spanning 
+            <strong>Full-Stack Development</strong>, <strong>Artificial Intelligence &amp; Machine Learning</strong>, and 
+            <strong>Cross-Platform Mobile Application Development</strong>.
+          </p>
+          <p>
+            I have architected and deployed production-ready applications like <em>RoomMate</em> (Flutter &amp; Node.js), 
+            <em>ResumeCraft</em> (React, TypeScript &amp; PostgreSQL), and <em>CropCare-AI</em> (Machine Learning vision pipeline). 
+            My passion lies in writing clean, scalable code, implementing intuitive user interfaces, and applying modern AI algorithms to real problems.
+          </p>
+        </div>
 
-    <h3 class="sub-heading">My Skills</h3>
-    <div class="skills-grid">
-      <div class="skill"><i class="fab fa-html5"></i><span>HTML</span></div>
-      <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-      <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-      <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
-      <div class="skill"><i class="fab fa-git-alt"></i><span>Git</span></div>
-      <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
-      <div class="skill"><i class="fas fa-database"></i><span>MongoDB</span></div>
-      <div class="skill"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-    </div>
-  </div>
-</section>
-<section id="projects">
-  <h2 class="section-title">My Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Book Store</h3>
-      <p>A modern book-selling website with clean UI, category filters, and responsive layout.</p>
-      <a href="https://aldojason.github.io/Store-Book/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>Poster Landing Page</h3>
-      <p>Attractive product landing page for posters using sleek CSS and responsive design.</p>
-      <a href="https://aldojason.github.io/Poster-landing-page/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>Quiz Application</h3>
-      <p>Interactive quiz app using JavaScript with multiple topics and live score tracking.</p>
-      <a href="https://aldojason.github.io/quiz-app/" target="_blank">Visit Project</a>
-    </div>
-    <div class="project-card">
-      <h3>To-Do List</h3>
-      <p>Lightweight to-do list with intuitive UI, task tracking, and local storage support.</p>
-      <a href="https://aldojason.github.io/Todolist/" target="_blank">Visit Project</a>
-    </div>
-  </div>
-</section>
-<section id="contact">
-  <h2 class="section-title">Contact Me</h2>
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Featured Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">8.1</span>
+            <span class="stat-label">Current CGPA (B.E CSE)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies </span>
+          </div>
+        </div>
+      </div>
 
-  <div class="contact-container">
-    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="contact-info">
-      <p>You can also reach me at:</p>
-      <a href="mailto:aldojason07@gmail.com" class="email-link">aldojason07@gmail.com</a>
-
-      <div class="social-links">
-        <a href="https://github.com/Aldojason" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/aldojason" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+      <!-- Education Section -->
+      <div class="education-section">
+        <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Academic Background</h3>
+        <div class="education-grid">
+          <div class="edu-card glassmorphism">
+            <div class="edu-badge">2021 – 2025</div>
+            <h4>B.E. in Computer Science and Engineering</h4>
+            <p class="edu-institution">Anna University Affiliated</p>
+            <p class="edu-grade"><i class="fas fa-award"></i> Current CGPA: <strong>8.1</strong> (as of 6th semester)</p>
+          </div>
+          <div class="edu-card glassmorphism">
+            <div class="edu-badge">High School</div>
+            <h4>Higher Secondary Education(12th)</h4>
+            <p class="edu-institution">Indo American School</p>
+            <p class="edu-grade"><i class="fas fa-award"></i> Percentage: <strong>83.5%</strong></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<footer class="site-footer">
-  <p>&copy; 2025 Aldo Jason. All rights reserved.</p>
-  <div class="footer-links">
-    <a href="mailto:aldojason07example.com">aldojason07@gmail.com</a>
-    <a href="https://github.com/Aldojason" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/aldojason" target="_blank">LinkedIn</a>
-  </div>
-</footer>
-<!-- ...existing code... -->
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  </section>
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TOOLKIT &amp; PROFICIENCIES</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">A curated collection of languages, frameworks, AI libraries, and tools I use to build scalable products.</p>
+      </div>
 
-  // Optional: Close menu when a link is clicked (for better UX)
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
+      <!-- Skills Category Filter -->
+      <div class="skills-filter-container">
+        <button class="skill-filter-btn active" data-category="all">
+          <i class="fas fa-layer-group"></i> All Skills
+        </button>
+        <button class="skill-filter-btn" data-category="frontend">
+          <i class="fas fa-laptop-code"></i> Frontend &amp; Mobile
+        </button>
+        <button class="skill-filter-btn" data-category="backend">
+          <i class="fas fa-server"></i> Backend &amp; Databases
+        </button>
+        <button class="skill-filter-btn" data-category="ai">
+          <i class="fas fa-brain"></i> AI &amp; Machine Learning
+        </button>
+        <button class="skill-filter-btn" data-category="tools">
+          <i class="fas fa-tools"></i> DevOps &amp; Tools
+        </button>
+      </div>
+
+      <!-- Skills Dynamic Grid -->
+      <div class="skills-grid-v2" id="skills-grid">
+        
+        <!-- Frontend & Mobile -->
+        <div class="skill-card-v2" data-category="frontend">
+          <div class="skill-icon-wrap" style="--accent-color: #61dafb;">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">React</h4>
+            <span class="skill-role">Frontend UI Library</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="frontend">
+          <div class="skill-icon-wrap" style="--accent-color: #f7df1e;">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">JavaScript (ES6+)</h4>
+            <span class="skill-role">Core Web Logic</span>
+          </div>
+          <span class="skill-badge-pill">Intermediate</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="frontend">
+          <div class="skill-icon-wrap" style="--accent-color: #02569b;">
+            <i class="fas fa-mobile-screen"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Flutter &amp; Dart</h4>
+            <span class="skill-role">Cross-Platform Mobile</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="frontend">
+          <div class="skill-icon-wrap" style="--accent-color: #e34f26;">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">HTML5 &amp; Semantic Web</h4>
+            <span class="skill-role">Markup &amp; SEO</span>
+          </div>
+          <span class="skill-badge-pill">Advanced</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="frontend">
+          <div class="skill-icon-wrap" style="--accent-color: #1572b6;">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">CSS3 &amp; Responsive UI</h4>
+            <span class="skill-role">Flexbox, Grid &amp; Animations</span>
+          </div>
+          <span class="skill-badge-pill">Intermediate</span>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="skill-card-v2" data-category="backend">
+          <div class="skill-icon-wrap" style="--accent-color: #68a063;">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Node.js &amp; Express</h4>
+            <span class="skill-role">Server Runtime &amp; APIs</span>
+          </div>
+          <span class="skill-badge-pill">Intermediate</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="backend">
+          <div class="skill-icon-wrap" style="--accent-color: #3776ab;">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Python &amp; Flask</h4>
+            <span class="skill-role">Backend &amp; Web Services</span>
+          </div>
+          <span class="skill-badge-pill">Intermediate</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="backend">
+          <div class="skill-icon-wrap" style="--accent-color: #336791;">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">PostgreSQL</h4>
+            <span class="skill-role">Relational Database</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="backend">
+          <div class="skill-icon-wrap" style="--accent-color: #47a248;">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">MongoDB</h4>
+            <span class="skill-role">NoSQL Database</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="backend">
+          <div class="skill-icon-wrap" style="--accent-color: #ff6c37;">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">RESTful APIs</h4>
+            <span class="skill-role">Architecture &amp; Endpoints</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <!-- AI & Machine Learning -->
+
+        <div class="skill-card-v2" data-category="ai">
+          <div class="skill-icon-wrap" style="--accent-color: #f1502f;">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Scikit-learn</h4>
+            <span class="skill-role">Classification &amp; Regression</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="ai">
+          <div class="skill-icon-wrap" style="--accent-color: #ffcc00;">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Hugging Face</h4>
+            <span class="skill-role">Transformers &amp; Pretrained AI</span>
+          </div>
+          <span class="skill-badge-pill">Applied</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="ai">
+          <div class="skill-icon-wrap" style="--accent-color: #ef4444;">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">PyPDF2 &amp; ReportLab</h4>
+            <span class="skill-role">Document Processing &amp; Automation</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div class="skill-card-v2" data-category="tools">
+          <div class="skill-icon-wrap" style="--accent-color: #2496ed;">
+            <i class="fab fa-docker"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Docker</h4>
+            <span class="skill-role">Containerization</span>
+          </div>
+          <span class="skill-badge-pill">Basics</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="tools">
+          <div class="skill-icon-wrap" style="--accent-color: #f05032;">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Git &amp; GitHub</h4>
+            <span class="skill-role">Version Control &amp; CI/CD</span>
+          </div>
+          <span class="skill-badge-pill">Intermediate</span>
+        </div>
+
+        <div class="skill-card-v2" data-category="tools">
+          <div class="skill-icon-wrap" style="--accent-color: #00f0ff;">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <div class="skill-details">
+            <h4 class="skill-name">Render &amp; Vercel</h4>
+            <span class="skill-role">Cloud Deployment &amp; Hosting</span>
+          </div>
+          <span class="skill-badge-pill">Proficient</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="projects-overlay"></div>
+    <div class="container projects-container">
+      <div class="section-header">
+        <span class="section-tag">FINALIZED PORTFOLIO</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Selected real-world applications showcasing full-stack engineering, machine learning pipelines, and mobile apps.</p>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filters">
+        <button class="project-filter-btn active" data-filter="all">All Projects (7)</button>
+        <button class="project-filter-btn" data-filter="ai-ml">AI &amp; Machine Learning</button>
+        <button class="project-filter-btn" data-filter="fullstack">Full-Stack &amp; Web</button>
+        <button class="project-filter-btn" data-filter="mobile-tools">Mobile &amp; Automation</button>
+      </div>
+
+      <!-- Finalized Projects Grid -->
+      <div class="projects-grid-v2">
+
+        <!-- 1. RoomMate -->
+        <article class="project-card-v2" data-category="mobile-tools fullstack">
+          <div class="card-glow-bar" style="--glow-color: #38bdf8;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-mobile-alt"></i> Mobile &amp; Full-Stack</span>
+            <span class="project-index">01</span>
+          </div>
+          <h3 class="project-name">RoomMate</h3>
+          <p class="project-desc">A mobile app for managing shared household responsibilities with automated task rotation, scheduling, and accountability.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Member authentication &amp; profile management</li>
+              <li><i class="fas fa-check-circle"></i> Trash-duty rotation &amp; bathroom-cleaning schedule</li>
+              <li><i class="fas fa-check-circle"></i> Missed-task penalty system &amp; task history tracking</li>
+              <li><i class="fas fa-check-circle"></i> Water-filling reports &amp; automatic duty rotation</li>
+              <li><i class="fas fa-check-circle"></i> IST (<code>Asia/Kolkata</code>) localized date/time handling</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/RoomMate" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. ResumeCraft -->
+        <article class="project-card-v2" data-category="fullstack ai-ml">
+          <div class="card-glow-bar" style="--glow-color: #a855f7;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-file-contract"></i> AI &amp; Full-Stack Web</span>
+            <span class="project-index">02</span>
+          </div>
+          <h3 class="project-name">ResumeCraft</h3>
+          <p class="project-desc">An AI-powered ATS-friendly resume builder that helps job seekers craft professional, high-scoring resumes effortlessly.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Secure user authentication &amp; auto-save sessions</li>
+              <li><i class="fas fa-check-circle"></i> ATS-friendly customizable templates</li>
+              <li><i class="fas fa-check-circle"></i> AI resume &amp; dynamic content suggestions</li>
+              <li><i class="fas fa-check-circle"></i> Real-time preview with pixel-perfect PDF export</li>
+              <li><i class="fas fa-check-circle"></i> PostgreSQL database with Dockerized container setup</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/ResumeCraft" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. MediPredict Neuro -->
+        <article class="project-card-v2" data-category="ai-ml fullstack">
+          <div class="card-glow-bar" style="--glow-color: #ec4899;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-heart-pulse"></i> Healthcare AI Platform</span>
+            <span class="project-index">03</span>
+          </div>
+          <h3 class="project-name">MediPredict Neuro</h3>
+          <p class="project-desc">An advanced AI-based neurological screening platform for multimodal risk assessment through cognitive, voice, and scan data.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Librosa</span>
+            <span class="tech-tag">Hugging Face</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Interactive cognitive testing &amp; motor analysis</li>
+              <li><i class="fas fa-check-circle"></i> Acoustic speech analysis powered by Librosa</li>
+              <li><i class="fas fa-check-circle"></i> Medical scan analysis with predictive risk modeling</li>
+              <li><i class="fas fa-check-circle"></i> Pretrained transformer pipelines via Hugging Face</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated dual dashboards for patients and doctors</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/neuro" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. CropCare-AI -->
+        <article class="project-card-v2" data-category="ai-ml">
+          <div class="card-glow-bar" style="--glow-color: #22c55e;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-seedling"></i> Computer Vision &amp; ML</span>
+            <span class="project-index">04</span>
+          </div>
+          <h3 class="project-name">CropCare-AI</h3>
+          <p class="project-desc">An AI/ML project for analyzing crop and leaf imagery to identify and classify plant diseases with high accuracy.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> High-resolution leaf &amp; crop image analysis</li>
+              <li><i class="fas fa-check-circle"></i> Multi-class disease classification algorithm</li>
+              <li><i class="fas fa-check-circle"></i> Machine-learning-based automated prediction</li>
+              <li><i class="fas fa-check-circle"></i> Instant diagnostic reporting for agricultural protection</li>
+              <li><i class="fas fa-check-circle"></i> Deployed and accessible live via cloud web app</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://crop-care-ai-dusky.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-demo">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Live Demo</span>
+            </a>
+            <a href="https://github.com/Aldojason/CropCare-AI" target="_blank" rel="noopener noreferrer" class="btn-card-secondary">
+              <i class="fab fa-github"></i>
+              <span>Source</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. PDF Automation Tool -->
+        <article class="project-card-v2" data-category="mobile-tools">
+          <div class="card-glow-bar" style="--glow-color: #f59e0b;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-file-pdf"></i> Web Utility &amp; Automation</span>
+            <span class="project-index">05</span>
+          </div>
+          <h3 class="project-name">PDF Automation Tool</h3>
+          <p class="project-desc">A full-featured web-based PDF processing application for rapid document manipulation, splitting, and merging.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">PyPDF2</span>
+            <span class="tech-tag">ReportLab</span>
+            <span class="tech-tag">Render</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Merge multiple PDF documents seamlessly</li>
+              <li><i class="fas fa-check-circle"></i> Split and extract selected PDF pages</li>
+              <li><i class="fas fa-check-circle"></i> Rotate pages and apply custom watermarks</li>
+              <li><i class="fas fa-check-circle"></i> Fast client-server file upload and processing</li>
+              <li><i class="fas fa-check-circle"></i> Production deployment configured on Render</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/pdf_automation_tool" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+            <span class="badge-status"><i class="fas fa-server"></i> Render Deployed</span>
+          </div>
+        </article>
+
+        <!-- 6. Emotion Detection -->
+        <article class="project-card-v2" data-category="ai-ml">
+          <div class="card-glow-bar" style="--glow-color: #6366f1;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-smile"></i> NLP &amp; Machine Learning</span>
+            <span class="project-index">06</span>
+          </div>
+          <h3 class="project-name">Emotion Detection</h3>
+          <p class="project-desc">An ML-based emotion detection project that analyzes textual input data and accurately predicts the associated human emotions.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Data Science</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Text preprocessing &amp; tokenization pipeline</li>
+              <li><i class="fas fa-check-circle"></i> Feature extraction for emotional sentiment classification</li>
+              <li><i class="fas fa-check-circle"></i> Supervised machine learning prediction model</li>
+              <li><i class="fas fa-check-circle"></i> Multi-class emotion probability scoring</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/Emotion-detection" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 7. NASA API Fetch -->
+        <article class="project-card-v2" data-category="fullstack">
+          <div class="card-glow-bar" style="--glow-color: #06b6d4;"></div>
+          <div class="card-top">
+            <span class="project-badge"><i class="fas fa-satellite"></i> API &amp; Web Application</span>
+            <span class="project-index">07</span>
+          </div>
+          <h3 class="project-name">NASA API Fetch</h3>
+          <p class="project-desc">A space exploration web application that fetches and dynamically displays live astronomical data and imagery from NASA's Open APIs.</p>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">NASA API</span>
+          </div>
+
+          <div class="project-features">
+            <h4 class="features-heading">Key Features:</h4>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle"></i> Direct integration with NASA Open REST APIs</li>
+              <li><i class="fas fa-check-circle"></i> Live fetching of Astronomy Picture of the Day &amp; space data</li>
+              <li><i class="fas fa-check-circle"></i> Dynamic responsive gallery with informative descriptions</li>
+              <li><i class="fas fa-check-circle"></i> Asynchronous API data parsing and error handling</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Aldojason/nasa-api-fetch" target="_blank" rel="noopener noreferrer" class="btn-card-primary">
+              <i class="fab fa-github"></i>
+              <span>View Source</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Have a question, collaboration idea, or opportunity? Feel free to reach out!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card glassmorphism">
+          <h3>Let's Connect</h3>
+          <p>I am actively seeking software engineering and full-stack/AI roles where I can contribute to meaningful products.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:aldojason.a@gmail.com" class="contact-val">aldojason.a@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/aldo-jason" target="_blank" rel="noopener noreferrer" class="contact-val">linkedin.com/in/aldojason</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/Aldojason</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card glassmorphism">
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Aldo, I'd like to discuss a project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content container">
+      <div class="footer-brand">
+        <span class="logo-accent">&lt;AJ/&gt;</span> ALDO JASON
+      </div>
+      <p class="copyright">&copy; 2026 Aldo Jason. Built with modern HTML5 &amp; CSS3. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:aldojason.a@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Aldojason" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aldo-jason" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Logic -->
+  <script>
+    // Mobile navigation toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+
+    // Navbar background on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     });
-  });
-</script>
+
+    // Skills Category Filter
+    const skillFilters = document.querySelectorAll('.skill-filter-btn');
+    const skillCards = document.querySelectorAll('.skill-card-v2');
+
+    skillFilters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        skillFilters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-category');
+        skillCards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Project Category Filter
+    const projectFilters = document.querySelectorAll('.project-filter-btn');
+    const projectCards = document.querySelectorAll('.project-card-v2');
+
+    projectFilters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        projectFilters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          const cardCategories = card.getAttribute('data-category') || '';
+          if (filter === 'all' || cardCategories.includes(filter)) {
+            card.style.display = 'flex';
+            card.style.animation = 'fadeInUp 0.4s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 🌌 Floating Space Background Parallax Effect
+    const spaceBg = document.getElementById('spaceBgLayer');
+    if (spaceBg && window.matchMedia('(pointer: fine)').matches) {
+      let mouseX = 0, mouseY = 0;
+      let currentX = 0, currentY = 0;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 35;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 35;
+      });
+
+      function animateParallax() {
+        currentX += (mouseX - currentX) * 0.05;
+        currentY += (mouseY - currentY) * 0.05;
+        spaceBg.style.setProperty('--mouse-shift-x', `${currentX.toFixed(2)}px`);
+        spaceBg.style.setProperty('--mouse-shift-y', `${currentY.toFixed(2)}px`);
+        requestAnimationFrame(animateParallax);
+      }
+      requestAnimationFrame(animateParallax);
+    }
+  </script>
 </body>
 </html>
